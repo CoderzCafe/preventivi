@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="295.0" minWidth="319.0" prefHeight="295.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sticky.Controller">
+   <children>
+      <Label fx:id="menuButton" layoutX="278.0" layoutY="14.0" prefHeight="22.0" prefWidth="46.0" text="icon" />
+      <Label fx:id="addButton" layoutX="14.0" layoutY="17.0" />
+      <TextArea fx:id="notesArea" layoutY="45.0" prefHeight="239.0" prefWidth="319.0" />
+   </children>
+</AnchorPane>

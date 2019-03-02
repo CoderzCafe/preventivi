@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="adminPage" prefHeight="600.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerAdmin">
+   <children>
+      <Label fx:id="brandName" layoutX="28.0" layoutY="21.0" text="Preventivi" />
+      <Pane fx:id="leftMenuPane" layoutY="74.0" prefHeight="321.0" prefWidth="166.0" style="-fx-background-color: #4caf50;">
+         <children>
+            <Pane fx:id="listOfProductsMenu" layoutY="35.0" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #263238;">
+               <children>
+                  <Label fx:id="listOfProductsTitle" layoutX="33.0" layoutY="11.0" text="List of products" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="listOfQuotationMenu" layoutY="87.0" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #263238;">
+               <children>
+                  <Label fx:id="listOfQuotationTitle" layoutX="25.0" layoutY="12.0" text="List of quotation" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane fx:id="addCategoryMenu" layoutY="137.0" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: #263238;">
+               <children>
+                  <Label fx:id="addCategoryTitle" layoutX="34.0" layoutY="12.0" text="Add category" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="166.0" layoutY="73.0" prefHeight="527.0" prefWidth="857.0">
+         <content>
+            <BorderPane prefHeight="524.0" prefWidth="854.0">
+               <center>
+                  <StackPane prefWidth="854.0">
+                     <children>
+                        <Pane fx:id="listOfQuotationPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d4e157;" />
+                        <Pane fx:id="listOfProductsPane" minHeight="431.0" minWidth="854.0" style="-fx-background-color: #81d4fa;" />
+                        <Pane fx:id="addCategoryPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #81c784;" />
+                     </children>
+                  </StackPane>
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="backButton" layoutX="11.0" layoutY="9.0" onMouseClicked="#backButtonAction" />
+   </children>
+</AnchorPane>

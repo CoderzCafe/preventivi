@@ -1,0 +1,36 @@
+#mainPage {
+    -fx-background-image: url("/res/pic/bg.png");
+    // -fx-background-color: #8bc34a;
+}
+
+#addProductsPane {
+    -fx-background-image: url("/res/pic/menu_bg.png");
+
+}
+
+#productsQuotationPane {
+    -fx-background-image: url("/res/pic/menu_bg.png");
+}
+
+#adminPane {
+    -fx-background-image: url("/res/pic/menu_bg.png");
+}
+
+//  check ->> it
+#addProductPage {
+    -fx-background-image: url("/res/pic/page.png");
+}
+
+#addProductsMainPane {
+    -fx-background-image: url("/res/pic/page.png");
+}
+
+#nameText {
+    -fx-background-radius: 3 2;
+}
+
+#categoryChoiceBox {
+    -fx-font-family: url("/res/fonts/RobotoRegular");
+    -fx-font-size: 16px;
+}
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addProductsMainPane" prefHeight="600.0" prefWidth="1022.0" stylesheets="@../stylesheets/stylesheet1.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerAddingProducts">
+   <children>
+      <Label fx:id="brandName" layoutX="24.0" layoutY="11.0" prefHeight="54.0" prefWidth="221.0" text="Preventivi">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="createProductsHeader" layoutX="63.0" layoutY="82.0" prefHeight="32.0" prefWidth="477.0" text="Create your products" />
+      <Label fx:id="nameLabel" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="186.0" prefHeight="45.0" prefWidth="115.0" text="Name :" textAlignment="RIGHT" />
+      <TextField fx:id="nameText" layoutX="183.0" layoutY="187.0" prefHeight="35.0" prefWidth="269.0" />
+      <Separator layoutX="528.0" layoutY="126.0" orientation="VERTICAL" prefHeight="425.0" prefWidth="19.0" />
+      <Label fx:id="priceLabel" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="243.0" prefHeight="45.0" prefWidth="115.0" text="Price :" />
+      <TextField fx:id="priceText" layoutX="183.0" layoutY="243.0" prefHeight="35.0" prefWidth="269.0" />
+      <Label fx:id="typeLabel" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="299.0" prefHeight="45.0" prefWidth="115.0" text="Type : " />
+      <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="37.0" layoutY="386.0" prefHeight="45.0" prefWidth="115.0" text="Description :" />
+      <TextArea fx:id="descriptionText" layoutX="183.0" layoutY="359.0" prefHeight="108.0" prefWidth="269.0" />
+      <Pane fx:id="imageContainerPane" layoutX="671.0" layoutY="165.0" prefHeight="217.0" prefWidth="249.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <ImageView fx:id="uploadImageView" fitHeight="217.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <effect>
+            <DropShadow color="#8a8a8a" height="51.34" radius="25.9325" spread="0.23" width="54.39" />
+         </effect>
+      </Pane>
+      <Button fx:id="uploadImageButton" layoutX="671.0" layoutY="409.0" mnemonicParsing="false" onAction="#uploadImageAction" prefHeight="45.0" prefWidth="249.0" style="-fx-background-color: #fa3f33;" text="Upload image" />
+      <ChoiceBox fx:id="typeChoiceBox" layoutX="183.0" layoutY="299.0" prefHeight="35.0" prefWidth="269.0" style="-fx-font-family: roboto;" />
+      <Button fx:id="clearButton" layoutX="223.0" layoutY="531.0" mnemonicParsing="false" onAction="#clearButtonAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #f44336;" text="Clear" />
+      <Button fx:id="submitButton" layoutX="350.0" layoutY="531.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #03a9f4;" text="Submit" />
+      <Label fx:id="backButton" layoutX="9.0" layoutY="6.0" onMouseClicked="#backButtonAction" />
+      <Label fx:id="idLabel" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="129.0" prefHeight="45.0" prefWidth="115.0" text="Id :" textAlignment="RIGHT" />
+      <TextField fx:id="idText" layoutX="184.0" layoutY="130.0" prefHeight="35.0" prefWidth="269.0" />
+   </children>
+</AnchorPane>

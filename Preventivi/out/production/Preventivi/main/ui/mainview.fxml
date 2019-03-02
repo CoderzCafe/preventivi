@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerMain">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="mainPage" prefHeight="600.0" prefWidth="1022.0" stylesheets="@../../stylesheets/stylesheet1.css">
+         <children>
+            <Label fx:id="brandNameText" layoutX="293.0" layoutY="174.0" stylesheets="@../../stylesheets/stylesheet1.css" text="Preventivi" />
+            <Pane fx:id="addProductsPane" layoutX="114.0" layoutY="261.0" onMouseClicked="#addProductAction" prefHeight="140.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="addProductsIcon" layoutX="62.0" layoutY="21.0" />
+                  <Label fx:id="addProductsTitle" layoutX="39.0" layoutY="105.0" text="Add products" />
+               </children></Pane>
+            <Pane fx:id="productsQuotationPane" layoutX="334.0" layoutY="261.0" onMouseClicked="#productsQuotationAction" prefHeight="140.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="productsQuotationTitle" layoutX="12.0" layoutY="109.0" text="Products quotation" textAlignment="CENTER" />
+                  <Label fx:id="productsQuotationIcon" layoutX="66.0" layoutY="18.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="adminPane" layoutX="550.0" layoutY="261.0" onMouseClicked="#adminPanelAction" prefHeight="140.0" prefWidth="189.0">
+               <children>
+                  <Label fx:id="adminIcon" layoutX="58.0" layoutY="21.0" prefHeight="16.0" prefWidth="13.0" />
+                  <Label fx:id="adminTitle" layoutX="43.0" layoutY="106.0" text="Admin panel" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
